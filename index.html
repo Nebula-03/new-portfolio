@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img2/favicon (1).ico">
+    <link rel="stylesheet" media="screen and (max-width:760px )" href="tab.css">
+    <link rel="stylesheet" media="screen and (max-width:580px )" href="phone.css">
+    <title>me</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<script src="https://kit.fontawesome.com/f066fdd843.js" crossorigin="anonymous"></script>
+
+<body>
+    <div id="loader">
+
+    </div>
+    <div class="container">
+        <div class="section s-1">
+            <!-- <img src="img2/me2.png" alt=""> -->
+            <div class="content">
+                <p id="text3">Hey! <br> Myself Nikita.</p>
+                <p id="text1">Hey guys.<i class="fa-solid fa-hand-peace"></i> welcome to my portfolio,in college
+                    vacation I thought to make a website</p>
+                <p id="text2">But btw..I am always active on Intagram, LinkedIn..etc, follow my social media acc..thanks
+                    in advance.</p>
+
+            </div>
+            <div class="icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+
+        </div>
+
+        <div class="section s-2">
+            <div class="content">
+                <h2>Section two</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aut, in illum incidunt aperiam culpa
+                    tempore magni obcaecati perspiciatis qui! Quas commodi temporibus, ducimus fuga aliquam suscipit
+                    nisi quibusdam at voluptatibus harum explicabo molestias consequuntur aut eveniet vel accusamus
+                    itaque.</p>
+            </div>
+            <img src="img2/selfime2.png" alt="">
+        </div>
+
+        <div class="section s-3">
+            <div class="content">
+                <!-- <h3>My name is..</h3>
+                <h2>Nikita Mandal</h2> -->
+
+            </div>
+            <div class="parent">
+                <img id="myimage" src="img2/3.png" alt="">
+
+                <div class="child">
+                    <div class="content">
+                        <h3>My name is..</h3>
+                        <h2>Nikita Mandal</h2>
+                        <h4>HOVER ON MY IMAGE TO KNOW ME</h4>
+                    </div>
+                    
+                    
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum tenetur maxime placeat porro non
+                        dolore nisi, commodi quasi quisquam voluptatem eveniet soluta numquam sit eaque accusamus
+                        consectetur rem maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veniam
+                        explicabo neque quia inventore cum cumque hic quo eligendi libero. </p>
+
+                    <img class="arrow-image" src="img2/arrow.png" alt="">
+                    <!-- <audio id="beep" preload="auto">
+                        <source src="img2/Ed_Sheeran_-_Shape_Of_You_Karaoke_(getmp3.pro).mp3"></source>
+                    </audio> -->
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section s-4">
+            <div class="content">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aut, in illum incidunt aperiam culpa
+                    tempore magni obcaecati perspiciatis qui! Quas commodi temporibus, ducimus fuga aliquam suscipit
+                    nisi quibusdam at voluptatibus harum explicabo molestias consequuntur aut eveniet vel accusamus
+                    itaque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sequi? Officiis architecto culpa
+                    quidem maxime? At consectetur delectus provident consequuntur, eum rem optio, earum voluptas unde
+                    sequi sit consequatur ex.</p>
+            </div>
+            <img class="dog" src="img2/dogi.png" alt="">
+        </div>
+
+        <div class="section s-5">
+            <div class="content">
+                <h2>Section five</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum aut, in illum incidunt aperiam culpa
+                    tempore magni obcaecati perspiciatis qui! Quas commodi temporibus, ducimus fuga aliquam suscipit
+                    nisi quibusdam at voluptatibus harum explicabo molestias consequuntur aut eveniet vel accusamus
+                    itaque.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<!-- <script>
+    var beepOne= $("#beep")[0];
+    $("#myimage")
+    .mouseenter(function(){
+        beepOne.play();
+    });
+</script> -->
+
+<script>
+    var loader;
+    function loadNow(opacity) {
+        if (opacity <= 0) {
+            displayContent();
+        }
+        else {
+            loader.style.opacity = opacity;
+            window.setTimeout(function () {
+                loadNow(opacity - 0.05)
+            }, 100);
+        }
+    }
+    function displayContent() {
+        loader.style.display = 'none';
+        document.getElementById('container').style.display = 'block';
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        loader = document.getElementById('loader');
+        loadNow(1.5);
+    })
+
+</script>
+
+</html>

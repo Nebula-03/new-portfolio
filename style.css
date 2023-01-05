@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container .s-1 .content #text1{
+        border-right: solid 3px rgba(0,255,0,.75);
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Source Code Pro', monospace;  
+        font-size: 22px;
+        color: rgba(255,255,255,.70);
+      }
+      
+      /* Animation */
+      #text1 {
+        animation: animated-text 5s steps(40,end) 2s 1 normal both,
+                   animated-cursor 600ms steps(40,end) infinite;
+      }
+      
+      /* text animation */
+      
+      @keyframes animated-text{
+        from{width: 0;}
+        to{width: 1000px;}
+      }
+      
+      /* cursor animations */
+      
+      @keyframes animated-cursor{
+        from{border-right-color: rgba(0,255,0,.75);}
+        to{border-right-color: transparent;}
+      }
+
+      .container .s-1 .content #text2{
+        border-right: solid 3px rgba(0,255,0,.75);
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Source Code Pro', monospace;  
+        font-size: 17px;
+        color: rgba(255,255,255,.70);
+      }
+      
+      /* Animation */
+      #text2 {
+        animation: animated-text 5s steps(40,end) 7s 1 normal both,
+                   animated-cursor 600ms steps(40,end) infinite;
+      }
+      
+      /* text animation */
+      
+      @keyframes animated-text{
+        from{width: 0;}
+        to{width: 1000px;}
+      }
+      
+      /* cursor animations */
+      
+      @keyframes animated-cursor{
+        from{border-right-color: rgba(0,255,0,.75);}
+        to{border-right-color: transparent;}
+      }
+
+    
+      
+      /* Animation */
+      #text2 {
+        animation: animated-text 5s steps(40,end) 7s 1 normal both,
+                   animated-cursor 600ms steps(40,end) infinite;
+      }
+      
+      /* text animation */
+      
+      @keyframes animated-text{
+        from{width: 0;}
+        to{width: 1000px;}
+      }
+      
+      /* cursor animations */
+      
+      @keyframes animated-cursor{
+        from{border-right-color: rgba(201, 201, 201, 0.75);}
+        to{border-right-color: transparent;}
+      }
+
+
+
+#loader{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    z-index: 1;
+    overflow: visible;
+    background: black url('img2/smilegif.gif') no-repeat center center;
+}
+
+p{
+    font-size: 1.2rem;
+    color:white;
+}
+.s-1 p{
+    font-size: 1.1rem;
+    color:white;
+}
+.s-1 h2{
+    color:rgb(4, 49, 2);
+    
+}
+.s-2 h2{
+    color:rgb(6, 68, 3);
+}
+.s-3 h2{
+    color:rgb(90, 5, 57);
+}
+.s-4 h2{
+    color:rgb(3, 63, 63);
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    overflow:auto;
+}
+.container .section{
+    position: relative;
+    /* width:100%;
+    height:100vh; */
+    background-blend-mode: multiply;
+}
+.container .section:nth-child(1){
+    background: url(img/5.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width:100%;
+    height:100vh;
+}
+.container .section:nth-child(1) .content #text3{
+    display:none;
+}
+.container .section:nth-child(1) .content{
+    margin-left:40px;
+    padding-top:60px;
+}
+/* .container .section:nth-child(1) .content p:hover{
+    background-color: rgb(48, 47, 47);
+} */
+.container .section:nth-child(1) .icons{
+    padding-top:180px ;
+    margin-left:1000px;
+    
+}
+
+.container .section:nth-child(1) .icons a{
+    padding: 3px 6px;
+color:black;
+font-size:30px;
+}
+.container .section:nth-child(1) .icons a:hover{
+    color:white;
+    transform: translateY(-5%);
+    transition: 0.2s;
+}
+.container .section:nth-child(2){
+    width:100%;
+    height:100vh;
+    background: rgb(107, 236, 107) url(img2/bg11.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* .container .section:nth-child(2):hover{
+    background: rgb(20, 114, 62) url(img2/bg11.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    transition: 4s;
+} */
+.container .section:nth-child(2) img{
+    width:300px;
+    padding-top:165px;
+}
+.container .section:nth-child(2) .content{
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:20px;
+}
+.container .section:nth-child(2) .content p:hover{
+    background-color: rgb(36, 131, 33);
+}
+.container .section:nth-child(3){
+    width:100%;
+    height:100vh;
+    background: rgb(230, 152, 213);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(3):hover{
+    padding:0;
+    margin:0;
+    border:3px groove black;
+    box-shadow: 3px 3px 5px black,
+    4px 4px 6px rgb(83, 83, 83),
+    5px 5px 7px rgb(61, 61, 61),
+    6px 6px 10px rgb(145, 145, 145);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.container .section:nth-child(3) .parent #myimage{
+    width:235px;
+    float:left;
+    margin-top:150px;
+}
+.container .section:nth-child(3) .parent #myimage:hover{
+    border:5px dotted black;
+    border-radius: 50%;
+    /* box-shadow: 1px 2px solid black, 2px 3px solid black; */
+    transition:0.5s ;
+    background-color: rgb(39, 204, 163);
+}
+.container .section:nth-child(3) .parent .child .arrow-image{
+    padding-left:40px;
+    padding-top: 900px;
+    width:150px;
+    transform: rotateX(180deg);
+    display: none;
+}
+.container .section:nth-child(3) .parent #myimage:hover + .child .arrow-image{
+    display: block;
+    transition:1s;
+}
+.container .section:nth-child(3) .parent .child h2,h3{
+    font-size: 1.7rem;
+    margin-left: 500px;
+    margin-top:40px;
+    padding-right:60px;
+    display: none;
+}
+.container .section:nth-child(3) .parent .child h4{
+    padding-left:400px;
+    padding-top:200px;
+}
+.container .section:nth-child(3) .parent .child p{
+    color:rgb(5, 74, 87);
+    font-size: 1rem;
+    padding-left: 500px;
+    padding-top:60px;
+    padding-right:60px;
+    display: none;
+}
+@media screen and (min-width:580px){
+    .container .section:nth-child(3) .parent #myimage:hover + .child p{
+        display: block;
+    }
+    .container .section:nth-child(3) .parent #myimage:hover + .child h2{
+        display: block;
+        transition: 1s;
+    }
+    .container .section:nth-child(3) .parent #myimage:hover + .child h3{
+        display: block;
+        transition: 1s;
+    }
+    .container .section:nth-child(3) .parent #myimage:hover + .child h4{
+        display:none;
+        transition: 0.5s;
+    }
+    .container .section:nth-child(3) .parent .child .text{
+        color:black;
+    }
+}
+
+
+/* .container .section:nth-child(3) .content p:hover{
+    background-color: rgb(192, 65, 124);
+} */
+@media screen and (min-width:580px){
+    .container .section:nth-child(4){
+        width:100%;
+        height:100vh;
+        background: rgb(103, 216, 216) url(img2/1.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container .section:nth-child(4) .content{
+        margin-left: 400px;
+        padding-top:100px;
+        padding-right:20px;
+    }
+    .container .section:nth-child(4){
+        background: rgb(103, 216, 216) url(img2/bg11.webp);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .container .section:nth-child(4) .dog{
+        width:500px;
+        padding-left:200px;
+        padding-bottom:100px;
+    }
+    .container .section:nth-child(4) .content p:hover{
+        background-color: rgb(44, 182, 182);
+    }
+}
+
+.container .section:nth-child(5){
+    width:100%;
+    height:80vh;
+    /* background: radial-gradient(rgb(248, 132, 229),white); */
+    background: rgb(241, 181, 181) url(img2/13.webp);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container .section:nth-child(5) .content{
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:20px;
+}
+.container .section:nth-child(5) .content p:hover{
+    background-color: rgb(218, 218, 218);
+    color:blueviolet;
+}
+
+  
